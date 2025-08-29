@@ -20,20 +20,18 @@ class lab1 {
 		// add a new last_name variable.
 
 		// first_name of type String
-		String first_name = "Norman ";
+		String first_name = "Isabella ";
 		// (*** last_name of type String)
-		String last_name = "Forester";
+		String last_name = "Herrera";
 		// age of type int
-		int age = 20;
+		int age = 21;
 		// gpa of type double
-		double gpa = 3.4;
+		double gpa = 3.9;
 
 		// #2
 		// print the following message with the variables from #1
 		// your code must use the values set in #1,
-		// test your code by changing the values above to your first, last, age and gpa.
 		// note that the age should automatically adjust to +20
-		// (*** add last name)
 
 		System.out.println(first_name + last_name + " is a student at Huntington University,");
 		System.out.println("This student is 20 years old and has a gpa of " + gpa + ".");
@@ -44,7 +42,6 @@ class lab1 {
 		// #3
 		// modify the following loop to calculate and print the square root
 		// of the numbers 3 to 100 using 2 decimal places
-		// hint: use Math.sqrt()
 		// ie 3, 3.16,3.31, ... 10.0,
 		// (*** adjust start and stop values)
 		for (int i = 3; i < 101; i++) {
@@ -126,7 +123,6 @@ class lab1 {
 		// program code from a command line similar to the screenshot shown in Moodle
 		//
 		// create a GitHub account and upload a link to your lab1.java code in Moodle
-
 	}// main
 
 	public static boolean allSame(int a, int b, int c) {
@@ -146,5 +142,4 @@ class lab1 {
 
 		return sum/temp.length;
 	}
-
 }// class Main
