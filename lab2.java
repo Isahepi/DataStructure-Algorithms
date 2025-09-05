@@ -9,7 +9,7 @@
 // How does printing vs. not printing the numbers affect performance?
     //The printing slows down the performance of the program.
 // What factors limit your program from finding larger prime numbers?
-    //The factors are the time it takes to run the program and the memory of the computer.
+    //Some factors are the time it takes to run the program, the memory of the computer, the type of language we are using, in the case Java.
 
 public class lab2 {
 
