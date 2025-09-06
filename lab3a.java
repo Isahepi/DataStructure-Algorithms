@@ -1,5 +1,5 @@
 // lab3a.java
-// lehman
+// Isabella Herrera Pilonieta
 // fall 2025
 // power and GCD recursive functions
 //
