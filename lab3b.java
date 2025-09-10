@@ -22,22 +22,17 @@ class lab3b {
         System.out.println("Original\n");
         display(grid);
 
-        // Step 1: fill open space ' ' with 'r'
+        // Fill spaces with r
         floodFillTarget(grid, 5, 3, ' ', 'r');
         System.out.println("After flood fill with r\n");
         display(grid);
 
-        // Step 2: change border 'g' to 'i'
+        // Fill border with i
         floodFillTarget(grid, 0, 0, 'g', 'i');
         System.out.println("After flood filling border with i\n");
         display(grid);
     } // main
 
-    /**
-     * floodFillTarget:
-     * Recursively replaces all connected cells of type 'target'
-     * starting from (row, col) with 'fill'.
-     */
     public static void floodFillTarget(char[][] temp, int row, int col, char fillcolor, char bordercolor) {
         //Check if the current row/col is out of bounds
         if (row < 0 || row >= temp.length || col < 0 || col >= temp[row].length) {
@@ -52,7 +47,7 @@ class lab3b {
         //Replace the current cell with the fill color
         temp[row][col] = bordercolor;
 
-        // 4. Recursive calls in four directions
+        //Recursve calls in all 4 directions
         floodFillTarget(temp, row, col - 1, fillcolor, bordercolor); // left
         floodFillTarget(temp, row, col + 1, fillcolor, bordercolor); // right
         floodFillTarget(temp, row - 1, col, fillcolor, bordercolor); // up
