@@ -46,6 +46,7 @@ public class QueueCharArray {
     }
 
     // add to back of queue
+    // Check if the queue is full before adding a new element.
     public void add(char v) {
         if (full()) {
             return; // no error shown
