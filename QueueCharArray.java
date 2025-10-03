@@ -24,9 +24,10 @@ public class QueueCharArray {
 	int size;
 	int MAX;
 
+    
 	// default constructor
 	public QueueCharArray() {
-        this(5); // default capacity
+        this(8); // default capacity
     }
 
     // alternate constructor
@@ -91,14 +92,35 @@ public class QueueCharArray {
      * 
      * @return set as a String
      */
+    @Override
     public String toString() {
-        if (empty()) return "QUEUE: empty";
+    if (size == 0) return "[empty queue]";
 
-        StringBuilder sb = new StringBuilder();
-        sb.append("QUEUE: ");
-        for (int i = 0; i < size; i++) {
-            sb.append(data[(front + i) % MAX]).append(' ');
-        }
-        return sb.toString().trim();
+    StringBuilder sb = new StringBuilder();
+
+    // width of box = number of letters + commas between them
+    int width = size + (size - 1); // size letters + (size-1) commas
+
+    // top border
+    sb.append("+");
+    for (int i = 0; i < width; i++) sb.append("-");
+    sb.append("+\n");
+
+    // middle line with letters separated by commas
+    sb.append("|");
+    for (int i = 0; i < size; i++) {
+        sb.append(data[(front + i) % data.length]);
+        if (i < size - 1) sb.append(","); // add comma between letters
     }
+    sb.append("|\n");
+
+    // bottom border
+    sb.append("+");
+    for (int i = 0; i < width; i++) sb.append("-");
+    sb.append("+\n");
+
+    return sb.toString();
+}
+
+
 }// class

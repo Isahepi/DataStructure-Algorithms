@@ -14,11 +14,22 @@ public class StackCharArray {
 	
 	//methods
 
+    @Override
+	public String toString() {
+    if (empty()) return "[empty stack]";
+    StringBuilder result = new StringBuilder("+---+\n");
+    for (int i = top; i < MAX; i++) {
+        result.append("| ").append(data[i]).append(" |\n");
+    }
+    result.append("+---+\n");
+    return result.toString();
+}
+
 	/**
 	 * create empty stack with max size 5
 	 */
 	public StackCharArray() {
-		MAX = 5;
+		MAX = 10;
 		data = new char[MAX];
 		top = data.length;
 		size = 0;
@@ -99,5 +110,5 @@ public class StackCharArray {
 	{
 		return size;
 	}
-	
+
 }//class

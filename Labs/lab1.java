@@ -1,3 +1,4 @@
+package Labs;
 // CS 325 Data Structures - Lehman
 // fall 2025
 // lab1.java
