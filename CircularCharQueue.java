@@ -71,7 +71,7 @@ public class CircularCharQueue {
     // front item goes to back
     public void next() {
         if (back != null)
-            back = back.next;
+            back = back.next; 
     }
 
     // get size
