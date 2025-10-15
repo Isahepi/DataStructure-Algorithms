@@ -30,12 +30,11 @@ public class lab6 {
         test("$0.25", 0.25);
         test(" -$.25", -0.25);
         test("-8.96", -8.96);
+        
+        // *** add three additional test cases here
         test("$324$", 324.0); //1
         test("-4829$$$$$43.1937", -482943.1937); //2
         test("456,23", 45623); //3
-
-
-        // *** add three additional test cases here
 
     }// main
 
@@ -46,8 +45,8 @@ public class lab6 {
         Stack<Integer> s = new Stack<Integer>();
         Queue<Integer> q = new LinkedList<Integer>();
 
-        boolean decimalFound = false; // *** may or may not use this approach
-        boolean negative = false; // *** may or may not use this approach
+        boolean decimalFound = false; // using approach
+        boolean negative = false; // using approach
 
         // *** add code here ***
         a = a.trim();
@@ -92,7 +91,7 @@ public class lab6 {
 
         return answer;
 
-    }// toDouble
+    }
 
     // test method
     private static void test(String s, double expected) {
