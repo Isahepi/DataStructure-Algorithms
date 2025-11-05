@@ -5,7 +5,9 @@
  * 
  * tests QueueCharArray class
  */
- 
+
+import Lab4.QueueCharArray;
+
 public class testQueue {
 
 	public static void main(String[] args) {

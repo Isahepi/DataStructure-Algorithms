@@ -1,3 +1,4 @@
+package Lab4;
 /*Assume palindrome status is true
 
 Create stack

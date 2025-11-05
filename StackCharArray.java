@@ -1,3 +1,4 @@
+package Lab4;
 //StackCharArray.java
 //dr. lehman
 //fall 2025

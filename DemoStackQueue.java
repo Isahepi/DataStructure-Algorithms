@@ -1,10 +1,4 @@
-// DemoStackQueue.java
-// prof. lehman
-// fall 2025
-//
-// sample code for virtual class day
-// demonstrates using StackCharArray and QueueCharArray classes
-//
+
 
 class DemoStackQueue {
 
